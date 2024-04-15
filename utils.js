@@ -21,7 +21,7 @@ const sendEmail = async (params) => {
   const data = {
     from: 'No reply <noreply@visa-schedule-check>',
     to: config.NOTIFY_EMAILS,
-    subject: 'Hello US VISA schedules',
+    subject: 'USA VISA reschedule notification',
     ...params
   };
   await mg.messages.create(config.mailgun.DOMAIN, data)
